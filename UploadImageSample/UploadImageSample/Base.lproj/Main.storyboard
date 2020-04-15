@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UploadImageSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k7-Mz-waX">
+                                <rect key="frame" x="247" y="442" width="95" height="30"/>
+                                <state key="normal" title="Upload Image"/>
+                                <connections>
+                                    <action selector="didTapOnUploadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fr3-xr-3yt"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ayx-br-hB8">
+                                <rect key="frame" x="72" y="242.5" width="270" height="191"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="Ka3-Fn-YTw"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URe-Dm-5XE">
+                                <rect key="frame" x="75" y="442" width="89" height="30"/>
+                                <state key="normal" title="Select Image"/>
+                                <connections>
+                                    <action selector="didTapOnSelectImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qw6-cs-dSP"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Iin-Qu-MNy">
+                                <rect key="frame" x="197" y="447" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0k7-Mz-waX" firstAttribute="top" secondItem="ayx-br-hB8" secondAttribute="bottom" constant="8" id="38f-Mb-nzy"/>
+                            <constraint firstItem="URe-Dm-5XE" firstAttribute="top" secondItem="ayx-br-hB8" secondAttribute="bottom" constant="8" id="FBM-3l-u38"/>
+                            <constraint firstItem="ayx-br-hB8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="RWW-C5-BpV"/>
+                            <constraint firstItem="URe-Dm-5XE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="75" id="W6x-Gz-LdC"/>
+                            <constraint firstItem="ayx-br-hB8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xfk-dO-L0x"/>
+                            <constraint firstItem="URe-Dm-5XE" firstAttribute="baseline" secondItem="0k7-Mz-waX" secondAttribute="baseline" id="YfW-Dz-tVz"/>
+                            <constraint firstItem="0k7-Mz-waX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="URe-Dm-5XE" secondAttribute="trailing" constant="8" symbolic="YES" id="Zc8-X9-FVd"/>
+                            <constraint firstItem="ayx-br-hB8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="198" id="m2m-E2-U8W"/>
+                            <constraint firstItem="ayx-br-hB8" firstAttribute="centerX" secondItem="0k7-Mz-waX" secondAttribute="centerX" constant="-87.5" id="mh2-PE-e5K"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Iin-Qu-MNy" id="CfC-kM-84F"/>
+                        <outlet property="imgView" destination="ayx-br-hB8" id="bFJ-fd-npc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1072" y="165"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
