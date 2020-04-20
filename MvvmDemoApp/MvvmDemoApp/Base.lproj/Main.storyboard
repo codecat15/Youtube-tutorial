@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,21 +12,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="MvvmDemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xSK-dv-TnT">
-                                <rect key="frame" x="20" y="247" width="374" height="34"/>
+                                <rect key="frame" x="20" y="291" width="378" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sSs-BI-5Ai">
-                                <rect key="frame" x="20" y="304" width="378" height="34"/>
+                                <rect key="frame" x="20" y="348" width="378" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TD-5I-uG6">
-                                <rect key="frame" x="188" y="353" width="38" height="30"/>
+                                <rect key="frame" x="188" y="397" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="didTapOnLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ggN-DY-BzB"/>
@@ -35,16 +35,14 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="0TD-5I-uG6" firstAttribute="top" secondItem="sSs-BI-5Ai" secondAttribute="bottom" constant="15" id="1XV-KH-N73"/>
-                            <constraint firstItem="xSK-dv-TnT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="247" id="HHZ-PU-0Bq"/>
-                            <constraint firstItem="sSs-BI-5Ai" firstAttribute="top" secondItem="xSK-dv-TnT" secondAttribute="bottom" constant="23" id="Iuc-6N-HNM"/>
-                            <constraint firstItem="0TD-5I-uG6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="188" id="IyU-GK-lGR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0TD-5I-uG6" secondAttribute="trailing" constant="188" id="Wga-C1-yix"/>
-                            <constraint firstItem="sSs-BI-5Ai" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XJl-xA-SCY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sSs-BI-5Ai" secondAttribute="trailing" constant="16" id="aBG-rs-ZZK"/>
-                            <constraint firstItem="xSK-dv-TnT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gnH-sP-7vb"/>
-                            <constraint firstItem="xSK-dv-TnT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="lwV-cQ-u3s"/>
-                            <constraint firstItem="sSs-BI-5Ai" firstAttribute="leading" secondItem="xSK-dv-TnT" secondAttribute="leading" id="oX3-HL-GUC"/>
+                            <constraint firstItem="sSs-BI-5Ai" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="348" id="7Y9-pU-hXu"/>
+                            <constraint firstItem="sSs-BI-5Ai" firstAttribute="leading" secondItem="xSK-dv-TnT" secondAttribute="leading" id="LTu-SL-G4p"/>
+                            <constraint firstItem="sSs-BI-5Ai" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="a9D-le-8Di"/>
+                            <constraint firstItem="sSs-BI-5Ai" firstAttribute="trailing" secondItem="xSK-dv-TnT" secondAttribute="trailing" id="e9W-sz-izD"/>
+                            <constraint firstItem="sSs-BI-5Ai" firstAttribute="top" secondItem="xSK-dv-TnT" secondAttribute="bottom" constant="23" id="evb-Sa-v59"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sSs-BI-5Ai" secondAttribute="trailing" constant="16" id="f1C-Or-DzZ"/>
+                            <constraint firstItem="0TD-5I-uG6" firstAttribute="top" secondItem="sSs-BI-5Ai" secondAttribute="bottom" constant="15" id="qwg-X6-bXl"/>
+                            <constraint firstItem="0TD-5I-uG6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yAm-uc-1Ae"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -56,18 +54,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-735" y="37"/>
+            <point key="canvasLocation" x="-526.08695652173913" y="34.821428571428569"/>
         </scene>
         <!--Employee View Controller-->
         <scene sceneID="t1k-EM-5w2">
             <objects>
                 <viewController id="ly0-2x-M15" customClass="EmployeeViewController" customModule="MvvmDemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M5o-I4-wN5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VTB-s6-3Bx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="employeeCell" rowHeight="63" id="33A-lt-6Bs" customClass="EmployeeTableViewCell" customModule="MvvmDemoApp" customModuleProvider="target">
@@ -123,7 +121,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EvV-Tb-hBW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SAj-7v-FQQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
