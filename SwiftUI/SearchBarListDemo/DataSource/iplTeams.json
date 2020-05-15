@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Chennai Super Kings",
+    "winners": "2010,2011,2018",
+    "icon":"csk"
+  },
+  {
+    "id": 2,
+    "name": "Delhi Capitals",
+    "winners": "",
+    "icon":"dc"
+  },
+  {
+    "id": 3,
+    "name": "Kings XI Punjab",
+    "winners": "",
+    "icon":"k11"
+  },
+  {
+    "id": 4,
+    "name": "Kolkata Knight Riders",
+    "winners": "2012,2014",
+    "icon":"kkr"
+  },
+  {
+    "id": 5,
+    "name": "Mumbai Indians",
+    "winners": "2013,2015,2017,2019",
+    "icon":"mi"
+  },
+  {
+    "id": 6,
+    "name": "Rajasthan Royals",
+    "winners": "2008",
+    "icon":"rr"
+  },
+  {
+    "id": 7,
+    "name": "Royal Challengers Bangalore",
+    "winners": "",
+    "icon":"rcb"
+  },
+  {
+    "id": 8,
+    "name": "Sunrisers Hyderabad",
+    "winners": "2016",
+    "icon":"shyd"
+  },
+
+]
