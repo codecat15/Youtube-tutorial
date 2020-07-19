@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDPerson" representedClassName="CDPerson" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="toVehicle" optional="YES" toMany="YES" minCount="1" maxCount="2" deletionRule="Nullify" destinationEntity="CDVehicle" inverseName="toPerson" inverseEntity="CDVehicle"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="CDVehicle" representedClassName="CDVehicle" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="toPerson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDPerson" inverseName="toVehicle" inverseEntity="CDPerson"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="CDPerson" positionX="-36" positionY="9" width="128" height="88"/>
+        <element name="CDVehicle" positionX="0" positionY="63" width="128" height="103"/>
+    </elements>
+</model>
