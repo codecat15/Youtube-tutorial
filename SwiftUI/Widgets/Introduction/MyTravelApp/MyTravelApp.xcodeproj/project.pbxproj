@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86684C4225254C18007A6705 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C4125254C18007A6705 /* AppDelegate.swift */; };
+		86684C4425254C18007A6705 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C4325254C18007A6705 /* SceneDelegate.swift */; };
+		86684C4925254C18007A6705 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86684C4725254C18007A6705 /* Main.storyboard */; };
+		86684C4B25254C1A007A6705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86684C4A25254C1A007A6705 /* Assets.xcassets */; };
+		86684C4E25254C1A007A6705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86684C4C25254C1A007A6705 /* LaunchScreen.storyboard */; };
+		86684C5925254C1A007A6705 /* MyTravelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C5825254C1A007A6705 /* MyTravelAppTests.swift */; };
+		86684C6425254C1A007A6705 /* MyTravelAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C6325254C1A007A6705 /* MyTravelAppUITests.swift */; };
+		86684C7A25254C44007A6705 /* TravelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C7925254C44007A6705 /* TravelList.swift */; };
+		86684C8225254C8E007A6705 /* TravelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C8125254C8E007A6705 /* TravelCell.swift */; };
+		86684C8825254CB4007A6705 /* TravelDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C8725254CB4007A6705 /* TravelDetailsVC.swift */; };
+		86684C9125254CD4007A6705 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C9025254CD4007A6705 /* Travel.swift */; };
+		86684C9925254CE4007A6705 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C9825254CE4007A6705 /* Reservation.swift */; };
+		86684CA1252550B1007A6705 /* TravelListExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684CA0252550B1007A6705 /* TravelListExtension.swift */; };
+		86684CB0252569FC007A6705 /* TravelResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684CAF252569FC007A6705 /* TravelResource.swift */; };
+		86684D752526B6E7007A6705 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86684D152526B25E007A6705 /* WidgetKit.framework */; };
+		86684D762526B6E7007A6705 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86684D172526B25E007A6705 /* SwiftUI.framework */; };
+		86684D792526B6E7007A6705 /* MyTravelWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684D782526B6E7007A6705 /* MyTravelWidget.swift */; };
+		86684D7B2526B6E7007A6705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86684D7A2526B6E7007A6705 /* Assets.xcassets */; };
+		86684D7F2526B6E7007A6705 /* MyTravelWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 86684D742526B6E7007A6705 /* MyTravelWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		86684D872526C2D5007A6705 /* Travel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C9025254CD4007A6705 /* Travel.swift */; };
+		86684D8C2526C2D8007A6705 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684C9825254CE4007A6705 /* Reservation.swift */; };
+		86684D8D2526C2DE007A6705 /* TravelResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684CAF252569FC007A6705 /* TravelResource.swift */; };
+		86684DBA2526C62A007A6705 /* TravelEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684DB92526C62A007A6705 /* TravelEntry.swift */; };
+		86684DE92527C4BD007A6705 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684DE82527C4BD007A6705 /* Provider.swift */; };
+		86684DF02527C8A4007A6705 /* TWSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684DEF2527C8A4007A6705 /* TWSmallView.swift */; };
+		86684DFA2527C8B1007A6705 /* TWMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86684DF92527C8B1007A6705 /* TWMediumView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86684C5525254C1A007A6705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86684C3625254C18007A6705 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86684C3D25254C18007A6705;
+			remoteInfo = MyTravelApp;
+		};
+		86684C6025254C1A007A6705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86684C3625254C18007A6705 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86684C3D25254C18007A6705;
+			remoteInfo = MyTravelApp;
+		};
+		86684D7D2526B6E7007A6705 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86684C3625254C18007A6705 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86684D732526B6E7007A6705;
+			remoteInfo = MyTravelWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		86684D222526B25E007A6705 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				86684D7F2526B6E7007A6705 /* MyTravelWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		86684C3E25254C18007A6705 /* MyTravelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTravelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86684C4125254C18007A6705 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86684C4325254C18007A6705 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		86684C4825254C18007A6705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86684C4A25254C1A007A6705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86684C4D25254C1A007A6705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86684C4F25254C1A007A6705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86684C5425254C1A007A6705 /* MyTravelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTravelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86684C5825254C1A007A6705 /* MyTravelAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelAppTests.swift; sourceTree = "<group>"; };
+		86684C5A25254C1A007A6705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86684C5F25254C1A007A6705 /* MyTravelAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTravelAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86684C6325254C1A007A6705 /* MyTravelAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelAppUITests.swift; sourceTree = "<group>"; };
+		86684C6525254C1A007A6705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86684C7925254C44007A6705 /* TravelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelList.swift; sourceTree = "<group>"; };
+		86684C8125254C8E007A6705 /* TravelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelCell.swift; sourceTree = "<group>"; };
+		86684C8725254CB4007A6705 /* TravelDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetailsVC.swift; sourceTree = "<group>"; };
+		86684C9025254CD4007A6705 /* Travel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Travel.swift; sourceTree = "<group>"; };
+		86684C9825254CE4007A6705 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		86684CA0252550B1007A6705 /* TravelListExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelListExtension.swift; sourceTree = "<group>"; };
+		86684CAF252569FC007A6705 /* TravelResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelResource.swift; sourceTree = "<group>"; };
+		86684D152526B25E007A6705 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		86684D172526B25E007A6705 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		86684D742526B6E7007A6705 /* MyTravelWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyTravelWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		86684D782526B6E7007A6705 /* MyTravelWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTravelWidget.swift; sourceTree = "<group>"; };
+		86684D7A2526B6E7007A6705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86684D7C2526B6E7007A6705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86684DB92526C62A007A6705 /* TravelEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelEntry.swift; sourceTree = "<group>"; };
+		86684DE82527C4BD007A6705 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		86684DEF2527C8A4007A6705 /* TWSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TWSmallView.swift; path = MyTravelWidget/TWSmallView.swift; sourceTree = SOURCE_ROOT; };
+		86684DF92527C8B1007A6705 /* TWMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TWMediumView.swift; path = MyTravelWidget/TWMediumView.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86684C3B25254C18007A6705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86684C5125254C1A007A6705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86684C5C25254C1A007A6705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86684D712526B6E7007A6705 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86684D762526B6E7007A6705 /* SwiftUI.framework in Frameworks */,
+				86684D752526B6E7007A6705 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86684C3525254C18007A6705 = {
+			isa = PBXGroup;
+			children = (
+				86684C4025254C18007A6705 /* MyTravelApp */,
+				86684C5725254C1A007A6705 /* MyTravelAppTests */,
+				86684C6225254C1A007A6705 /* MyTravelAppUITests */,
+				86684D772526B6E7007A6705 /* MyTravelWidget */,
+				86684D142526B25E007A6705 /* Frameworks */,
+				86684C3F25254C18007A6705 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86684C3F25254C18007A6705 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86684C3E25254C18007A6705 /* MyTravelApp.app */,
+				86684C5425254C1A007A6705 /* MyTravelAppTests.xctest */,
+				86684C5F25254C1A007A6705 /* MyTravelAppUITests.xctest */,
+				86684D742526B6E7007A6705 /* MyTravelWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86684C4025254C18007A6705 /* MyTravelApp */ = {
+			isa = PBXGroup;
+			children = (
+				86684CAE252569CD007A6705 /* Resource */,
+				86684C8F25254CC3007A6705 /* Model */,
+				86684C7425254C22007A6705 /* UserInterface */,
+				86684C4125254C18007A6705 /* AppDelegate.swift */,
+				86684C4325254C18007A6705 /* SceneDelegate.swift */,
+				86684C4725254C18007A6705 /* Main.storyboard */,
+				86684C4A25254C1A007A6705 /* Assets.xcassets */,
+				86684C4C25254C1A007A6705 /* LaunchScreen.storyboard */,
+				86684C4F25254C1A007A6705 /* Info.plist */,
+			);
+			path = MyTravelApp;
+			sourceTree = "<group>";
+		};
+		86684C5725254C1A007A6705 /* MyTravelAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				86684C5825254C1A007A6705 /* MyTravelAppTests.swift */,
+				86684C5A25254C1A007A6705 /* Info.plist */,
+			);
+			path = MyTravelAppTests;
+			sourceTree = "<group>";
+		};
+		86684C6225254C1A007A6705 /* MyTravelAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86684C6325254C1A007A6705 /* MyTravelAppUITests.swift */,
+				86684C6525254C1A007A6705 /* Info.plist */,
+			);
+			path = MyTravelAppUITests;
+			sourceTree = "<group>";
+		};
+		86684C7425254C22007A6705 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				86684C8625254C92007A6705 /* TravelDetails */,
+				86684C7825254C29007A6705 /* TravelListView */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		86684C7825254C29007A6705 /* TravelListView */ = {
+			isa = PBXGroup;
+			children = (
+				86684C7925254C44007A6705 /* TravelList.swift */,
+				86684C8125254C8E007A6705 /* TravelCell.swift */,
+				86684CA0252550B1007A6705 /* TravelListExtension.swift */,
+			);
+			path = TravelListView;
+			sourceTree = "<group>";
+		};
+		86684C8625254C92007A6705 /* TravelDetails */ = {
+			isa = PBXGroup;
+			children = (
+				86684C8725254CB4007A6705 /* TravelDetailsVC.swift */,
+			);
+			path = TravelDetails;
+			sourceTree = "<group>";
+		};
+		86684C8F25254CC3007A6705 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86684C9025254CD4007A6705 /* Travel.swift */,
+				86684C9825254CE4007A6705 /* Reservation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		86684CAE252569CD007A6705 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				86684CAF252569FC007A6705 /* TravelResource.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		86684D142526B25E007A6705 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86684D152526B25E007A6705 /* WidgetKit.framework */,
+				86684D172526B25E007A6705 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86684D772526B6E7007A6705 /* MyTravelWidget */ = {
+			isa = PBXGroup;
+			children = (
+				86684DEE2527C886007A6705 /* WIdgetInterface */,
+				86684D782526B6E7007A6705 /* MyTravelWidget.swift */,
+				86684D7A2526B6E7007A6705 /* Assets.xcassets */,
+				86684D7C2526B6E7007A6705 /* Info.plist */,
+				86684DB92526C62A007A6705 /* TravelEntry.swift */,
+				86684DE82527C4BD007A6705 /* Provider.swift */,
+			);
+			path = MyTravelWidget;
+			sourceTree = "<group>";
+		};
+		86684DEE2527C886007A6705 /* WIdgetInterface */ = {
+			isa = PBXGroup;
+			children = (
+				86684DEF2527C8A4007A6705 /* TWSmallView.swift */,
+				86684DF92527C8B1007A6705 /* TWMediumView.swift */,
+			);
+			path = WIdgetInterface;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86684C3D25254C18007A6705 /* MyTravelApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86684C6825254C1A007A6705 /* Build configuration list for PBXNativeTarget "MyTravelApp" */;
+			buildPhases = (
+				86684C3A25254C18007A6705 /* Sources */,
+				86684C3B25254C18007A6705 /* Frameworks */,
+				86684C3C25254C18007A6705 /* Resources */,
+				86684D222526B25E007A6705 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86684D7E2526B6E7007A6705 /* PBXTargetDependency */,
+			);
+			name = MyTravelApp;
+			productName = MyTravelApp;
+			productReference = 86684C3E25254C18007A6705 /* MyTravelApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86684C5325254C1A007A6705 /* MyTravelAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86684C6B25254C1A007A6705 /* Build configuration list for PBXNativeTarget "MyTravelAppTests" */;
+			buildPhases = (
+				86684C5025254C1A007A6705 /* Sources */,
+				86684C5125254C1A007A6705 /* Frameworks */,
+				86684C5225254C1A007A6705 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86684C5625254C1A007A6705 /* PBXTargetDependency */,
+			);
+			name = MyTravelAppTests;
+			productName = MyTravelAppTests;
+			productReference = 86684C5425254C1A007A6705 /* MyTravelAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		86684C5E25254C1A007A6705 /* MyTravelAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86684C6E25254C1A007A6705 /* Build configuration list for PBXNativeTarget "MyTravelAppUITests" */;
+			buildPhases = (
+				86684C5B25254C1A007A6705 /* Sources */,
+				86684C5C25254C1A007A6705 /* Frameworks */,
+				86684C5D25254C1A007A6705 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86684C6125254C1A007A6705 /* PBXTargetDependency */,
+			);
+			name = MyTravelAppUITests;
+			productName = MyTravelAppUITests;
+			productReference = 86684C5F25254C1A007A6705 /* MyTravelAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		86684D732526B6E7007A6705 /* MyTravelWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86684D802526B6E7007A6705 /* Build configuration list for PBXNativeTarget "MyTravelWidgetExtension" */;
+			buildPhases = (
+				86684D702526B6E7007A6705 /* Sources */,
+				86684D712526B6E7007A6705 /* Frameworks */,
+				86684D722526B6E7007A6705 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyTravelWidgetExtension;
+			productName = MyTravelWidgetExtension;
+			productReference = 86684D742526B6E7007A6705 /* MyTravelWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86684C3625254C18007A6705 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					86684C3D25254C18007A6705 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					86684C5325254C1A007A6705 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 86684C3D25254C18007A6705;
+					};
+					86684C5E25254C1A007A6705 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 86684C3D25254C18007A6705;
+					};
+					86684D732526B6E7007A6705 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 86684C3925254C18007A6705 /* Build configuration list for PBXProject "MyTravelApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86684C3525254C18007A6705;
+			productRefGroup = 86684C3F25254C18007A6705 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86684C3D25254C18007A6705 /* MyTravelApp */,
+				86684C5325254C1A007A6705 /* MyTravelAppTests */,
+				86684C5E25254C1A007A6705 /* MyTravelAppUITests */,
+				86684D732526B6E7007A6705 /* MyTravelWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86684C3C25254C18007A6705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86684C4E25254C1A007A6705 /* LaunchScreen.storyboard in Resources */,
+				86684C4B25254C1A007A6705 /* Assets.xcassets in Resources */,
+				86684C4925254C18007A6705 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86684C5225254C1A007A6705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86684C5D25254C1A007A6705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86684D722526B6E7007A6705 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86684D7B2526B6E7007A6705 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86684C3A25254C18007A6705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86684C9125254CD4007A6705 /* Travel.swift in Sources */,
+				86684C8225254C8E007A6705 /* TravelCell.swift in Sources */,
+				86684CB0252569FC007A6705 /* TravelResource.swift in Sources */,
+				86684C7A25254C44007A6705 /* TravelList.swift in Sources */,
+				86684CA1252550B1007A6705 /* TravelListExtension.swift in Sources */,
+				86684C4225254C18007A6705 /* AppDelegate.swift in Sources */,
+				86684C4425254C18007A6705 /* SceneDelegate.swift in Sources */,
+				86684C9925254CE4007A6705 /* Reservation.swift in Sources */,
+				86684C8825254CB4007A6705 /* TravelDetailsVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86684C5025254C1A007A6705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86684C5925254C1A007A6705 /* MyTravelAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86684C5B25254C1A007A6705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86684C6425254C1A007A6705 /* MyTravelAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86684D702526B6E7007A6705 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86684D792526B6E7007A6705 /* MyTravelWidget.swift in Sources */,
+				86684D8D2526C2DE007A6705 /* TravelResource.swift in Sources */,
+				86684D872526C2D5007A6705 /* Travel.swift in Sources */,
+				86684D8C2526C2D8007A6705 /* Reservation.swift in Sources */,
+				86684DFA2527C8B1007A6705 /* TWMediumView.swift in Sources */,
+				86684DE92527C4BD007A6705 /* Provider.swift in Sources */,
+				86684DF02527C8A4007A6705 /* TWSmallView.swift in Sources */,
+				86684DBA2526C62A007A6705 /* TravelEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86684C5625254C1A007A6705 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86684C3D25254C18007A6705 /* MyTravelApp */;
+			targetProxy = 86684C5525254C1A007A6705 /* PBXContainerItemProxy */;
+		};
+		86684C6125254C1A007A6705 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86684C3D25254C18007A6705 /* MyTravelApp */;
+			targetProxy = 86684C6025254C1A007A6705 /* PBXContainerItemProxy */;
+		};
+		86684D7E2526B6E7007A6705 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86684D732526B6E7007A6705 /* MyTravelWidgetExtension */;
+			targetProxy = 86684D7D2526B6E7007A6705 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86684C4725254C18007A6705 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86684C4825254C18007A6705 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86684C4C25254C1A007A6705 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86684C4D25254C1A007A6705 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86684C6625254C1A007A6705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86684C6725254C1A007A6705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86684C6925254C1A007A6705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTravelApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecat15.MyTravelApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86684C6A25254C1A007A6705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTravelApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecat15.MyTravelApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86684C6C25254C1A007A6705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTravelAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecat15.MyTravelAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTravelApp.app/MyTravelApp";
+			};
+			name = Debug;
+		};
+		86684C6D25254C1A007A6705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTravelAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecat15.MyTravelAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyTravelApp.app/MyTravelApp";
+			};
+			name = Release;
+		};
+		86684C6F25254C1A007A6705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTravelAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecat15.MyTravelAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyTravelApp;
+			};
+			name = Debug;
+		};
+		86684C7025254C1A007A6705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTravelAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecat15.MyTravelAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyTravelApp;
+			};
+			name = Release;
+		};
+		86684D812526B6E7007A6705 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTravelWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecat15.MyTravelApp.MyTravelWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86684D822526B6E7007A6705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MyTravelWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.codecat15.MyTravelApp.MyTravelWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86684C3925254C18007A6705 /* Build configuration list for PBXProject "MyTravelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86684C6625254C1A007A6705 /* Debug */,
+				86684C6725254C1A007A6705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86684C6825254C1A007A6705 /* Build configuration list for PBXNativeTarget "MyTravelApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86684C6925254C1A007A6705 /* Debug */,
+				86684C6A25254C1A007A6705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86684C6B25254C1A007A6705 /* Build configuration list for PBXNativeTarget "MyTravelAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86684C6C25254C1A007A6705 /* Debug */,
+				86684C6D25254C1A007A6705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86684C6E25254C1A007A6705 /* Build configuration list for PBXNativeTarget "MyTravelAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86684C6F25254C1A007A6705 /* Debug */,
+				86684C7025254C1A007A6705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86684D802526B6E7007A6705 /* Build configuration list for PBXNativeTarget "MyTravelWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86684D812526B6E7007A6705 /* Debug */,
+				86684D822526B6E7007A6705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86684C3625254C18007A6705 /* Project object */;
+}
