@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>MyTravelApp.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>MyTravelWidgetExtension.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>86684C3D25254C18007A6705</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86684C5325254C1A007A6705</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86684C5E25254C1A007A6705</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>86684D342526B52D007A6705</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
