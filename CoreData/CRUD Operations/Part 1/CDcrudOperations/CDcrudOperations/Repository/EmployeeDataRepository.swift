@@ -71,10 +71,10 @@ struct EmployeeDataRepository : EmployeeRepository
     }
 
     func update(employee: Employee) {
-        <#code#>
+        // update code here
     }
 
     func delete(id: UUID) {
-        <#code#>
+        // delete code here
     }
 }

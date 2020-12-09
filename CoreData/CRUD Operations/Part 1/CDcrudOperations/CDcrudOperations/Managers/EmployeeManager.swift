@@ -12,18 +12,21 @@ import CoreData
 struct EmployeeManager
 {
     func createEmployee(employee: Employee) {
-        <#code#>
+        // create employee code here
     }
 
     func fetchEmployee() -> [Employee]? {
-        <#code#>
+        // fetch employee code here
+        return nil
     }
 
     func updateEmployee(employee: Employee) -> Bool {
-        <#code#>
+        // update employee code here
+        return false
     }
 
     func deleteEmployee(id: UUID) -> Bool {
-        <#code#>
+        // delete employee code here
+        return false
     }
 }
