@@ -61,8 +61,6 @@ struct SmartPhoneResourceAccessor
         var components = URLComponents(url: smartPhoneEndpoint, resolvingAgainstBaseURL: false)
         components?.queryItems = request.convertToURLQueryItems()
 
-        debugPrint(components?.url!)
-
         httpUtility.getApiData(requestUrl: (components?.url!)!, resultType: PhoneResponse.self) { (response) in
 
             _ = completionHandler(response)
