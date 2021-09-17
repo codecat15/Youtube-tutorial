@@ -18,7 +18,3 @@ protocol AnimalCoreDataRepository : AnimalBaseRepository {
 protocol AnimalApiResourceRepository : AnimalBaseRepository {
     
 }
-
-protocol AnimalRepository {
-    func getAnimalRecords(completionHandler:@escaping(_ result: Array<Animal>?)->Void)
-}
