@@ -20,7 +20,7 @@ protocol EmployeeRepository {
 
 /* Thank you for downloading the source code, I hope the video was helpful and if you are having any questions then I would be happy to answer them so do feel free to ask as YouTube comment or via email codecat15@gmail.com
 
-Note: If you think this video was helpful and someone can benefit from it, then please do share this and if you care new to the channel I request you to please subscribe to the channel :)*/
+Note: If you think this video was helpful and someone can benefit from it, then please do share this and if you are new to the channel I request you to please subscribe to the channel :)*/
 
 struct EmployeeDataRepository : EmployeeRepository
 {
