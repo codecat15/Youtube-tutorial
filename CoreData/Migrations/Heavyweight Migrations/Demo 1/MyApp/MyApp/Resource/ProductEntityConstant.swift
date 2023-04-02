@@ -5,7 +5,7 @@
 //  Created by CodeCat15 on 3/27/23.
 //
 
-/* Dev Notes: A migration runs only once so adding adding an enum can be bit of an overkill because once the migration completes this enum will add no value in the source code.
+/* Dev Notes: A migration runs only once so adding an enum can be bit of an overkill because once the migration completes this enum will add no value in the source code.
  
     You can avoid the enum but make sure that there are no spelling mistakes in the attribute names.
  
