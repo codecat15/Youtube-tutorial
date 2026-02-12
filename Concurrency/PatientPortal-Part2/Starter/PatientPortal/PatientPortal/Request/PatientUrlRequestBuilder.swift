@@ -11,6 +11,8 @@ protocol PatientUrlRequestBuilder {
     func makeGetPatientsRequest(take: Int, skip: Int) -> URLRequest?
     func makeGetPatientDetailsRequest(patientId: Int) -> URLRequest?
     func makeSearchPatientByNameRequest(name: String) -> URLRequest?
+    func makeGetPatientReportsUrlRequest(patientId: Int) -> URLRequest?
+    func makeReportDownloadRequest(url: URL) -> URLRequest
 }
 
 final class PatientRequestBuilder: PatientUrlRequestBuilder {
@@ -66,6 +68,31 @@ final class PatientRequestBuilder: PatientUrlRequestBuilder {
         request.httpMethod = "GET"
         return request
         
+    }
+    
+    func makeGetPatientReportsUrlRequest(patientId: Int) -> URLRequest? {
+        let endpoint = baseURL.appendingPathComponent("Report/Download")
+        var request = URLRequest(url: endpoint)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let payload: [Int] = [patientId]
+        do {
+            let body = try JSONSerialization.data(withJSONObject: payload, options: [])
+            request.httpBody = body
+            return request
+        } catch {
+            return nil
+        }
+    }
+    
+    func makeReportDownloadRequest(url: URL) -> URLRequest {
+
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        return request
     }
 }
 
