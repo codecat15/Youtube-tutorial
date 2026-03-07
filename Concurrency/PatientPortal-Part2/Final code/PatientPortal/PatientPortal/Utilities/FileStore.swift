@@ -6,7 +6,7 @@
 //
 
 import Foundation
-@MainActor
+
 final class FileStore {
     
     private let fileManager = FileManager.default
